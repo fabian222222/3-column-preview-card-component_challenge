@@ -1,0 +1,106 @@
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card_section_container {
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card_section_elements {
+    width: 100%;
+    display: flex;
+}
+.card_section_car {
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+.card_section_car.sedans {
+    background-color:  hsl(31, 77%, 52%);
+}
+.card_section_car.suvs {
+    background-color:  hsl(184, 100%, 22%);
+}
+.card_section_car.luxury {
+    background-color:  hsl(179, 100%, 13%);
+}
+
+.card_section_car_icon, .card_section_car_name {
+    margin-bottom: 40px;
+}
+
+.card_section_car_name_text {
+    font-family: "big shoulders display";
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+}
+
+.card_section_car_description {
+    margin-bottom: 110px;
+}
+.card_section_car_description_text {
+    font-family: "lexend deca";
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 160%;
+}
+
+.card_section_learn_more_link {
+    text-decoration: none;
+    font-family: "lexend deca";
+    padding: 10px 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    font-size: 15px;
+}
+.card_section_learn_more_link.sedans {
+    color: hsl(31, 77%, 52%);
+}
+.card_section_learn_more_link.suvs {
+    color: hsl(184, 100%, 22%);
+}
+.card_section_learn_more_link.luxury {
+    color: hsl(179, 100%, 13%);
+}
+.card_section_learn_more_link:hover{
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.card_section_learn_more_link.sedans:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+.card_section_learn_more_link.suvs:hover {
+    background-color:  hsl(184, 100%, 22%);
+}
+.card_section_learn_more_link.luxury:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 860px){
+    .card_section_container {
+        border-radius: 15px;
+    }
+    .card_section_elements {
+        flex-direction: column;
+    }
+    .card_section_car_icon, .card_section_car_name {
+        margin-bottom: 20px;
+    }
+    .card_section_car_description {
+        margin-bottom: 40px;
+    }
+    .card_section {
+        margin: 100px 0;
+    }
+}
